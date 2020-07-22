@@ -1,0 +1,536 @@
+.wrap{
+    margin: 3vw 1.5vw;
+    
+}
+/*Tab*/
+.profileTab {
+  box-shadow: 7px 0 8px #e9ebee;
+  margin: 0;
+  line-height: 1.25;
+  padding: 0;
+  width: 100%;
+  z-index: 10;
+  height: 100%;
+}
+.profileTab > li {
+  list-style-type: none;
+  width: 100%;
+   
+}
+.profileTab > li  a:hover {
+  background-color:  #c9c3bc;
+}
+.profileTab > li  a{
+  text-decoration: none;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.5vw;
+  letter-spacing: 3px;
+  display: block;
+  padding: 1.5vw;
+  height: 100%;
+}
+.profileTab > li  i {
+  margin-right: 10px;
+}
+.tabActive {
+  color: black; 
+  border-right: 5px solid #af9a7d;
+  background-image: linear-gradient(to right, rgb(255, 255, 255) ,  rgb(233, 233, 233), rgb(213, 213, 213));
+}
+.tabActive:hover {
+  border-right: 5px solid #af9a7d;
+  color: black; 
+  background-image: linear-gradient(to right, rgb(255, 255, 255) ,  rgb(233, 233, 233), rgb(213, 213, 213));
+}
+/*Profile User*/
+.wrap-content-profile {
+  background-color: #F9F9F9;
+  width: 100%;
+  padding: 1vw 5vw 2vw 5vw;
+}
+.wrap-content-profile > h2 {
+  font-size: 2vw;
+  font-weight: normal;
+}
+.cardProfile {
+  padding: 2vw 1.8vw;
+  outline: none;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  margin-top: 1vw;
+  cursor: pointer;
+}
+#logoName {
+  width: 5vw;
+  height: 5vw;
+  background-color: #af9a7d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 2vw;
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+}
+.cardWrap {
+  transition: ease 0.3s;
+}
+.cardWrap:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.cardProfile h3{
+  font-size: 1.2vw;
+  user-select: none;
+  font-weight: bold;
+  padding-left: 1vw;
+}
+.cardProfile .profileDetail > span{
+  font-size: 1.8vw;
+  padding-left: 1vw;
+}
+.first .profileDetail > span{
+  font-size: 1.5vw;
+  padding-left: 1vw;
+  user-select: none;
+}
+#modifyProfile {
+  margin-left: auto;
+  font-weight: bold;
+  font-size: 1.5  vw;
+  letter-spacing: 1px;
+  user-select: none;
+}
+.first {
+  background-color: #fff8db;
+}
+.first ~ .content{
+  background-color: #fff8db;
+}
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+  padding-left: 1vw;
+  border-top: 2px solid black;
+}
+.content > form {
+  padding-left: 1.2vw;
+  padding-bottom: 1.2vw;
+}
+.content > form > .form-group {
+  display: block;
+}
+.content > form > .form-group > label {
+  display: block;
+  padding: 1vw 0;
+}
+.content > form > .form-group > select option {
+ outline: none; 
+}
+.content > form > .form-group > input,select,textarea {
+  padding: 1vw;
+  outline: none;
+  border: 0.5px solid black;
+  border-radius: 50px;
+  width: 60%;
+}
+.content > form > .form-group > textarea{
+  padding: 10px 30px;
+}
+.content > form > .form-group > input:focus,select:focus,textarea:focus {
+  border: 0.5px solid rgb(95, 170, 231);
+  box-shadow: 0 4px 8px 0 rgba(112, 171, 238, 0.2),0 6px 20px 0 rgba(112, 166, 216, 0.19);
+}
+.content > form > button {
+  padding: 0.6vw 2vw;
+  margin-right: 1vw;
+  border: 2px solid #6aa2fc;
+  background-color: white;
+  outline: none;
+  transition: ease 0.5s;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+.content > form a {
+  padding: 0.6vw 2vw;
+  margin-right: 1vw;
+  border: 2px solid #6aa2fc;
+  background-color: white;
+  outline: none;
+  transition: ease 0.5s;
+  color: black;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+.first ~ .content > form > button {
+  background-color: #FEF1BA;
+}
+.first ~ .content > form > a {
+  background-color: #FEF1BA;
+}
+.content > form > button:hover {
+  color: white;
+  background-color: #6aa2fc;
+}
+.content > form > a:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #6aa2fc;
+}
+
+/*Room booking*/
+#booking-alert {
+  margin-top: 30px;
+  font-size: 12px;
+  padding: 10px;
+  display: block;
+  border: 1px solid red;
+  border-radius: 20px;
+  background-color: rgb(255, 210, 210);
+}
+#booking-alert > p {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+#booking-alert > p > span {
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  color: red;
+  margin-left: auto;
+}
+.booking-container {
+  max-height: 700px;
+  margin-top: 10px;
+  overflow: auto;
+  width: 100%;
+  display: block;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.roomEmpty {
+  display: block;
+  margin-top: 20%;
+  text-align: center;
+  min-height: 200px;
+}
+.roomEmpty  i {
+  display: block;
+  width: 100%;
+  font-size: 54px;
+  text-align: center;
+}
+.empty {
+  display: block;
+}
+.booking-container > .booking-room-detail {
+  padding: 10px;
+}
+.booking-room-detail > .booking-room-card {
+  display: grid;
+  padding: 10px;
+  margin: 10px 0;
+  grid-template-columns: 25% 60% 15%;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  transition: ease .2s;
+  height: auto;
+  position: relative;
+}
+.booking-room-card > .deleteR {
+  position: absolute;
+  cursor: pointer;
+  z-index: 5;
+  color: red;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 2.2rem;
+  top: -3%;
+  transition: ease .2s;
+  left: -1%;
+  display: none;
+}
+.booking-room-detail > .booking-room-card:hover {
+  -webkit-box-shadow: 0 0 10px #5bbaff;
+  box-shadow: 0 0 10px #5bbaff;
+}
+.booking-room-detail > .booking-room-card:hover > .deleteR {
+  display: block;
+}
+.booking-room-card .booking-img {
+  max-width: 100%;
+  border-radius: 5px;
+  height: auto;
+}
+.booking-room-card > .booking-room-card-content {
+  padding-left: 20px;
+}
+.booking-room-card-content > a {
+  font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  font-size: 12 0%; 
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+.booking-room-card-content > .room-card-discription {
+  font-size: 1vw;
+  font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  letter-spacing: 1px;
+}
+.booking-room-card-content > .room-card-option {
+  margin: 10px 0 5px 0;
+  font-size: 1vw;
+}
+.booking-room-card-content  .room-card-checking {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+.booking-room-card-content  .room-card-checking > div > span {
+  font-weight: bold;
+}
+.booking-room-card-content > .room-card-option span {
+  font-size: 1.1vw;
+  font-weight: bold;
+}
+.booking-room-card-price .booking-card-rate {
+  font-size: 1vw;
+  display: flex ;
+}
+.booking-room-card-price {
+  position: relative;
+}
+.booking-room-card-price .booking-card-rate > span {
+  background-color: #003580;
+  display: flex;
+  font-size: 100%;
+  font-weight: bold;
+  color: white;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  align-items: center;
+  padding: 0 10px;
+}
+.booking-room-card-price .booking-card-price {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.booking-room-card-price .booking-card-price p {
+  text-align: right;
+  font-size: 2vw;
+  font-weight: bold;
+  color: red;
+}
+#bk-title {
+  font-size: 1vw;
+  margin: 0;
+  color: black;
+  font-weight: normal;
+}
+#bk-huy {
+  font-size: 0.8vw;
+  color: green;
+  font-weight: normal;
+  width: 100%;
+  letter-spacing: 0.5px;
+  line-height: 0.5px;
+}
+.booking-cash {
+  border-bottom: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #e0e0e0;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+
+}
+.booking-cash > h3 {
+  font-size: 1.5vw;
+  color: black;
+}
+.booking-cash > span {
+  margin-left: 10px;
+  font-size: 2.2vw;
+  font-weight: bold;
+  color: red;
+}
+.booking-cash > button {
+  margin-left: auto;
+  transition: ease 0.5s;
+  font-size: 1.3vw;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  border: 2px solid rgb(53, 53, 253);
+  background-color: white;
+}
+.booking-cash > button:hover {
+  color: white;
+  background-color: #94bdfd;
+}
+@media only screen and (max-width: 800px) {
+  .booking-room-card-content .room-card-checking > div > span {
+    display: block  ;
+  }
+  .room-card-discription > p {
+    margin-bottom: 0;
+  }
+  .booking-room-card-content > .room-card-option {
+    margin: 0;
+  }
+  .booking-room-card-price .booking-card-rate > span {
+    font-size: 1.2rem;
+  }
+  .booking-cash > button {
+    font-size: 1.5rem;
+  }
+  .booking-cash > h3 {
+    font-size: 1.7rem;
+    margin: 0;
+  }.booking-cash > span {font-size: 2.5rem;}
+  #bk-title {
+    font-size: 1.5rem;
+  }
+  .booking-room-card-price .booking-card-price p {
+    margin-bottom: 5px;
+    font-size: 2.5rem;
+  }
+  .room-card-discription > p {
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  .booking-room-card .booking-img {
+    height: 70%;
+  }
+}
+@media only screen and (max-width: 1040px) {
+  .cardProfile h3 {
+    font-size: 2rem;
+  }
+  .first .profileDetail > span {
+    font-size: 3rem;
+  }
+  .cardProfile .profileDetail > span {
+    font-size: 2.5rem;
+  }
+  #logoName {
+    width: 6vw;
+    height: 6vw;
+  }
+  #modifyProfile {
+    font-size: 2rem;
+  }
+  .wrap-content-profile > h2 {
+    font-size: 3.4rem;
+  }
+  .profileTab > li a {
+    font-size: 2rem;
+  }
+  .booking-card-rate >p {
+    font-size: 1rem;
+  }
+  .booking-room-card-price .booking-card-rate > span {
+    height: 20px;
+  }
+  .booking-room-card-content > .room-card-option {
+    font-size: 1.2rem;
+  }
+  .booking-room-card-content > .room-card-option span {
+    font-size: 1.4rem;
+  }
+  .room-card-checking > div {
+    font-size: 1.2rem;
+  }
+  .room-card-discription > p {
+    font-size: 1.2rem;
+  }
+  .booking-room-card-content > a {
+    font-size: 2rem;
+  }
+}
+@media screen and ( max-width: 430px) {
+  .wrap-content-profile > h2 {
+    font-size: 2.5rem;
+  }
+  .booking-room-detail > .booking-room-card {
+    height: 150px;
+    
+  }
+  .booking-card-rate >p {
+    font-size: 0.7rem;
+  }
+  .booking-room-card-content > .room-card-option {
+    margin: 5px;
+    font-size: 1rem;
+  }
+  #bk-title {
+    font-size: 1.4rem;
+  }
+  .booking-room-card-price .booking-card-price p {
+    font-size: 2.5rem;
+  }
+  .booking-room-card-content > a {
+    font-size: 1.5rem;
+  }
+  .fa-users:before {
+    font-size: 1rem;
+  }
+  .room-card-discription > p {
+    font-size: 0.8rem;
+    margin-bottom: 3px;
+  }
+  .booking-room-card-content .room-card-checking {
+    font-size: 1rem !important;
+    margin-top: 0;
+  }
+  .booking-room-card-content .room-card-checking > div > span {
+    font-size: 0.8rem;
+    display: block;
+  }
+  .room-card-checking > div {
+    font-size: 1rem;
+  }
+  .booking-room-card .booking-img {
+    height: 80%;
+  }
+  .booking-cash > h3 {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+  .booking-cash > span {
+    font-size: 2rem;
+  }
+  .booking-cash > button {
+    font-size: 1.2rem;
+  }
+  .cardProfile h3 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .cardProfile .profileDetail > span{
+    font-size: 1.5rem;
+  }
+ 
+  #modifyProfile {
+    font-size: 1.5rem;
+  }
+  #logoName {
+    width: 50px;
+    font-size: 2rem;
+    height: 50px;
+  }
+}

@@ -1,0 +1,2 @@
+<a class="loginUserBtn" href="<?php echo ( $data["Dashboard"] );?>/Login/LoginPage/login"> Đăng Nhập</a>
+<a style="margin-left: 5px;" class="loginUserBtn" href="<?php echo ( $data["Dashboard"] );?>/Login/LoginPage/register"> Đăng ký</a>

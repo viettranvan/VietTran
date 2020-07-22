@@ -1,0 +1,257 @@
+/*Login*/
+
+.wrap{
+    width: 30%;
+    margin: 3vw auto;
+    padding: 2.5vw;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+    border: 1px solid #af9a7d;
+}
+.wrap .title {
+  font-size: 3vw;
+  font-weight: 700;
+  margin-bottom: 0px;
+  color: #202020;
+  text-transform: uppercase;
+  text-align: center;
+}
+.wrap form {
+  margin-top: 3vw;
+}
+.wrap .input-gr {
+  position: relative;
+  display: grid;
+  grid-template-columns: 7% 93%;
+  border-bottom: 2px solid #d9d9d9;
+  margin: 3vw 0;
+  padding: 1.2vw 0;
+  width: 100%;
+}
+.input-gr .one {
+  margin-top: 0;
+}
+.input-gr .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d9d9d9;
+  margin-left: -5px;
+}
+.icon > i {
+  transform: 0.3s;
+  font-size: 1vw;
+}
+.input-gr > div >h5 {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 1vw;
+  transition: 0.3s;
+}
+.input-gr:before,.input-gr:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  width: 0%;
+  height: 0.1vw;
+  background-color: #af9a7d;
+  transition: .4s;
+}
+.input-gr:before{
+	right: 50%;
+}
+
+.input-gr:after{
+	left: 50%;
+}
+ .befocus:before, .befocus:after {
+  width: 50%;
+}
+.befocus .input-field h5 {
+  top: -5px;
+  font-size: 1vw ;
+}
+.befocus > .icon > i {
+  color: #af9a7d;
+}
+.input-gr > div > input {
+  position: absolute;
+  left: 1vw;
+  top: 0;
+  width: 95%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0.5rem 0.7rem;
+  font-size: 15px;
+  color: #555;
+}
+.input-gr > div > .pass {
+  margin-top: 4px;
+  margin-bottom: 30px;
+}
+.wrap form > .login-control{
+  display: flex;
+  margin-bottom: 20px;
+}
+.wrap  form > .login-control #registerNew {
+	display: inline;
+  font-size: 1vw;
+	color: black ;
+}
+.wrap  form > .login-control #registerNew a {
+	display: inline;
+	text-align: left;
+	color: #af9a7d;
+  font-size: 1vw;
+	transition: .3s;
+}
+.wrap  form > .login-control #forgetPassword {
+	display: inline;
+	color: #af9a7d;
+  font-size: 1vw;
+  margin-left: auto;
+	transition: .3s;
+}
+
+.wrap form a:hover{
+	color: #af9a7d ;
+}
+.wrap form .btn{
+	display: block;
+	width: 100%;
+	height: 3vw;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-size: 200%;
+	background-image: linear-gradient(to right, #af9a7d ,  #856d4b, #c7a575);
+	font-size: 1.2rem;
+  color: #fff;
+  font-weight: 800;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+  transition: .5s;
+  font-size: 1vw;
+}
+.wrap form .btn:hover{
+	background-position: right;
+}
+.terms {
+  display: flex;
+  margin: 20px auto 10px auto;
+}
+.terms p{
+	font-size: 1vw;
+  display: inline;
+  margin-left: 5px;
+} 
+.terms input[type="checkbox"] {
+  position: absolute;
+  opacity: 1;
+  left: 0;
+  top: 0;
+  margin: 0;
+}
+.check .checkmark{
+  width: 1vw;
+  height: 1vw;
+  border: 1px solid #856d4b;
+  display: block;
+  position: relative;
+}
+.check .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  width: 10px;
+  height: 4px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.check input[type="checkbox"]:checked ~ .checkmark{
+  background: #80715c;
+}
+
+.check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
+}
+ 
+/*Responsive*/
+@media only screen and (max-width: 1040px) {
+  .wrap form > .login-control #registerNew {
+    font-size: 1.2rem;
+  }
+  .wrap form > .login-control #registerNew a {
+    font-size: 1.1rem;
+  }
+  .wrap form > .login-control #forgetPassword {
+    font-size: 1.1rem;
+  }
+  .terms p {
+    font-size: 1rem;
+  }
+  .check .checkmark {
+    width: 10px;
+    height: 10px;
+  }
+  .check .checkmark:before{
+    top: 1px;
+    left: 1px;
+  }
+  .input-gr .icon i{
+    font-size: 1.2rem;
+  }
+  .input-gr > div > input {
+    font-size: 1.4rem;
+  }
+  .befocus .input-field h5 {
+    font-size: 1.5rem;
+  }
+  .wrap .input-gr {
+    margin-top: 4rem;
+  }
+  .wrap form .btn {
+    font-size: 1.2rem;
+    height: 2.4rem;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .wrap {
+    width: 50%;
+  }
+  .wrap .title {
+    font-size: 2.5rem;
+  }
+  .fa-user:before,.fa-lock:before {
+    font-size: 2rem;
+  }
+  .input-gr > div >h5 {
+    font-size: 1.8rem;
+    margin-left: 2rem;
+  }
+  .input-gr > div > input {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+  }
+  .input-gr .one {
+    font-size: 2rem;
+  } 
+  .input-gr .icon i {
+    margin-left: 20px !important;
+  }
+  .terms {
+    margin: 10px auto 5px auto;
+  }
+  .terms p {
+    font-size: 1.2rem;
+    margin-bottom: 0 !important;
+  }
+}

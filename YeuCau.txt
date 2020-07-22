@@ -1,0 +1,18 @@
+Yêu cầu làm layout:
+
+.Vì hình chỉ là bản phác thảo nên mấy chữ tiếng Anh trong đó sửa lại thành tiếng Việt
+
+.Phải có thụt đầu dòng để  mọi người dễ đọc code
+
+.Tên class khuyến khích là tiếng Anh( vì làm project mà đặt tiếng Việt nhìn nó củ chuối lắm ), đặt tên class rõ ràng
+
+.Các element phải trên 1 đường thẳng( cả về chiều dọc và chiều ngang giống như trong hình )
+
+.Hạn chế tối đa sử dụng absolute position ( position: absolute ) vì khi sử dụng sẽ làm trang web rất khó để căn chỉnh
+
+ element ở giữa thì t gợi ý các cách làm như sau:
+    +Sử dụng { margin: 0 auto; } để căn chỉnh một block con nằm trong một block cha có chiều dài width xác định
+    +Sử dụng { text-align: center } để căn chỉnh text
+    +Sử dụng { display: flex } ở thẻ parent và { align-item: center; justyfi-item: center; } để căn chỉnh nhiều block element mà những block element đó nằm trong một block element cha
+
+.Khoảng cách giữa các element thì có thể tự mình cho ra miễn sao nhìn vào thấy OK

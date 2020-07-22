@@ -1,0 +1,560 @@
+.wrap{
+    padding-top: 10px;
+}
+.wrap-banner video {
+    position: relative;
+}
+.wrap-banner .overlay {
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    max-width: 70%;
+    min-height: 5vw;
+    padding: 5vw 8vw;
+    text-align: center;
+}
+.overlay .overlay-header {
+    font-weight: 800;
+    font-size: 5vw;
+    color: #FFFFFF;
+    letter-spacing: 3px;
+    margin: 0 0 1.5vw;
+}
+.overlay .overlay-content {
+    font-size: 1.5vw;
+    letter-spacing: 1.5px;
+    color: white;
+    padding-bottom: 1vw;
+}
+.overlay .overlay-button {
+    padding: 10px 0;
+}
+.overlay .overlay-button a {
+    font-size: 1vw;
+    text-align: center;
+    padding: 0.5vw 1vw;
+    background-color: #af9a7d;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border: 3px solid #af9a7d;
+    color: black;
+}
+.overlay .overlay-button a:hover {
+    background-color: #af9a7d2f;
+    color: #af9a7d;
+    text-decoration: none;
+}
+.line {
+    height: 0.5vw;
+    width: 30%;
+    background-color: #af9a7d;
+    margin: 20px auto;
+}
+
+
+/*Section Wrapbanner*/
+
+.wrap-banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    margin: 0;
+    min-height: 5vw;
+}
+.wrap-banner .overlay {
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    max-width: 70%;
+    padding: 5vw 8vw;
+    text-align: center;
+}
+.overlay .overlay-header {
+    font-weight: 800;
+    font-size: 5vw;
+    color: #FFFFFF;
+    letter-spacing: 3px;
+    margin: 0 0 20px;
+}
+.overlay .overlay-button {
+    padding: 1vw 0;
+}
+.overlay .overlay-button a {
+    font-size: 1vw;
+    text-align: center;
+    padding: 0.5vw 1vw; 
+    background-color: #af9a7d;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border: 3px solid #af9a7d;
+    color: black;
+}
+.overlay .overlay-button a:hover {
+    background-color: #af9a7d2f;
+    color: #af9a7d;
+    text-decoration: none;
+}
+.line {
+    height: 0.5vw;
+    width: 30%;
+    background-color: #af9a7d;
+    margin: 1.2vw auto;
+}
+
+
+/*Section room-detail-gallery */
+.room-detail-gallery {
+    padding: 0 2rem;
+    margin: 5vw 0;
+
+}
+.room-detail-gallery img {
+    width: 100%;
+    border: 2px solid #af9a7d;
+    z-index: 1;
+    transition: ease 0.5s;
+    height: 250px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.room-detail-gallery img:hover {
+    transform: scale(1.15);
+    z-index: 2;
+}
+
+/*Section room-detail-info*/
+.room-detail-info {
+    padding: 0 2rem;
+    margin: 5vw 0;
+}
+.room-detail-info .rent-now {
+    margin-top: 1vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.room-detail-info .rent-now > button {
+    display: block;
+	border-radius: 25px;
+	outline: none;
+    border: none;
+    padding: 1vw;
+	background-size: 200%;
+	background-image: linear-gradient(to right, #a39175 ,  #806540, #dab47f);
+    font-size: 1.5vw;
+    border: 2px solid #856d4b;
+    color: #fff;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+    transition: .5s;
+}
+.room-detail-info .rent-now button:hover {
+    background-position: right;
+}
+.room-detail-info h2 {
+    font-size: 4vw;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 1.2vw;
+}
+.room-detail-info p {
+    font-size: 1vw;
+    line-height: 2vw;
+    letter-spacing: 2px;
+}
+.room-detail-info h4 {
+    font-size: 1.2vw;
+    letter-spacing: 3px;
+    margin: 1.2vw 0;
+}
+.room-detail-info i {
+    color: rgb(218, 218, 2);
+}
+/*Booking button*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 101; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 2vw;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #c7b08f;
+    color: white;
+    display: flex;
+    align-items: center ;
+  }
+  .modal-header h2 {
+      font-size: 1.5vw;
+      margin: 0;
+      padding: 1vw 0;
+  }
+  .modal-body {
+      padding: 2px 16px;
+      display: grid;
+      grid-template-columns: 75% 25%;
+}
+.checkDate{
+    margin: 5% 2%;
+    font-size: 1vw;
+}
+.checkDate > .dateCheckGr {
+    display: flex;
+}
+.checkDate ~ .pricebk > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checkDate ~ .pricebk span {
+    color: green;
+    padding : 5%; 
+    font-size: 3rem;
+    font-weight: 700;
+}
+.checkDate ~ .pricebk button:hover {
+    background-color: #e2d6c5;
+}
+.checkDate > .dateCheckGr > input {
+    width: 60%;
+    margin-left: auto;
+}
+.pricebk ~ #success{
+    margin: 0 0 0 10px;
+    font-size: 1vw;
+    color: green;
+    display: none;
+}
+.pricebk ~ #fail {
+    margin: 0 0 0 10px;
+    font-size: 1vw;
+    display: none;
+    color: red;
+}
+ 
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #c7b08f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-footer > button {
+      margin: 2% auto;
+      padding: 1% 5% ;
+      border: .1vw solid green;
+      cursor: no-drop;
+      border-radius: 10px;
+      color: green;
+      transition: ease .5s;
+      font-weight: bold;
+      font-size: 1vw;
+  }
+  .modal-footer > button:hover{
+      background-color: rgb(203, 250, 203);
+      color: rgb(2, 90, 2);
+  }
+
+
+
+
+/*Section - room-other*/
+.room-other {
+    text-align: center;
+    margin: 3vw 0;
+    background-color: #cfcfcf;
+    padding: 2.5vw 0;
+    min-height: 400px;
+}
+.room-other > h1 {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.slick {
+    margin: 50px;
+}
+.slick .slick-card {
+    padding: 1rem;
+    height: 400px;
+    outline: none;
+    text-align: left;
+}
+.slick-card .sl-body {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding-top: 20px;
+    transition: .4s;
+    border: 1px solid rgb(201, 201, 201);
+}
+.slick-card .sl-body:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.slick-card .sl-body  > img {
+    width: 80%;
+    height: 170px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.sl-content {
+    text-align: center;
+    border: 10px;
+}
+.sl-content > h2 {
+    font-weight: bold;
+}
+.sl-content > .r-type {
+    font-size: 13px;
+    margin: 10px 0 0 0;
+}
+.sl-content > .r-type span {
+    color: green;
+}
+.sl-content > .r-rate {
+    font-size: 13px;
+    margin-top: 10px;
+}
+.sl-content > .r-rate i {
+    color: yellow;
+}
+.sl-content > .r-pr {
+    margin-bottom: 20px;
+
+}
+.sl-content > .r-pr span {
+    font-weight: bold;
+    color: red;
+    font-size: 20px;
+}
+.sl-content  a {
+    outline: none;
+    color: black;
+    font-weight: bold;
+    border: 2px solid brown;
+    background-color: brown;
+    padding: 10px 20px;
+    transition: .3s;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+.sl-content  a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(221, 146, 146);
+}
+.slick-prev:before {
+    font-size: 40px;
+}
+  
+.slick-next:before {
+
+    font-size: 40px;
+}
+
+
+.messenger {
+    position: fixed;
+    right: 3vw;
+    font-size: 5vw;
+    bottom: 2vw;
+    color: #0184FF;
+    border-radius: 60;
+    cursor: pointer;
+}
+/*Responsive*/
+ 
+@media only screen and ( max-width: 860px) {
+    .overlay .overlay-button a {
+        font-size: 1rem;
+    }
+    .room-detail-info p{
+        font-size: 1rem;
+    }
+}
+@media only screen and ( max-width: 1040px) {
+    .overlay .overlay-button a {
+        font-size: 1.5rem;
+    }
+    .room-detail-info p {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+    .room-detail-info h4 {
+        font-size: 1.4rem;
+    }
+    .modal-content {
+        width: 70%;
+    }
+    .modal-header {
+        font-size: 3rem;
+        padding: 10px 20px;
+    }
+    .modal-header .close {
+        font-size: 3rem;
+    }
+    label {
+        font-size: 2rem;
+    }
+    .modal-header h2 {
+        font-size: 3rem;
+    }
+    .checkDate > .dateCheckGr > input {
+        font-size: 1.5rem;
+        padding-right: 1rem;
+    }
+    .checkDate ~ .pricebk > div {
+        font-size: 2.5rem;
+    }
+    .checkDate ~ .pricebk span {
+        font-size: 4.5rem;
+    }
+    .modal-footer {
+        padding: 10px 20px;
+    }
+    .modal-footer > button {
+        font-size: 2rem;
+    }
+    .sl-content > .r-type,.sl-content > .r-rate {
+        font-size: 18px;
+    }
+    .sl-content > .r-pr {
+        font-size: 1.5rem;
+    }
+    .slick .slick-card {
+        height: 420px;
+    }
+    .sl-content > h2 {
+        font-size: 2.2rem;
+    }
+    .sl-content a {
+        padding: 5px 13px;
+    }
+}
+@media only screen and (max-width: 420px) { 
+    .wrap-banner{
+        height: 200px;
+    }
+    .overlay .overlay-button a {
+        font-size: 1rem;
+    }
+    .overlay .overlay-header {
+        font-size: 2.5rem;
+    }
+    .room-detail-gallery img {
+        height: 150px;
+    }
+    .room-detail-info p {
+        letter-spacing: normal;
+        line-height: normal;
+        font-size: 1rem;
+    }
+    .room-detail-info h2 {
+        font-size: 2.5rem !important;
+    }
+    .room-detail-info .rent-now > button {
+        font-size: 1.5rem;
+        padding: 5px 10px;
+    }
+    .room-other > h1 {
+        font-size: 3rem;
+    }
+    .slick-card .sl-body > img {
+        height: 100px;
+        margin-bottom: 1rem;
+    }
+    .sl-content > h2 {
+        font-size: 1.5rem;
+    }
+    .slick-prev:before, .slick-next:before {
+        font-size: 2.5rem;
+    }
+    .sl-content > .r-type, .sl-content > .r-rate {
+        font-size: 1.2rem;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    .sl-content{
+        padding: 10px 10px;
+    }
+    .slick-card .sl-body {
+        padding-top: 10px;
+    }
+    .sl-content > .r-pr {
+        font-size: 1rem;
+    }
+    .sl-content > .r-pr {
+        margin-bottom: 7px;
+    }
+    .sl-content a {
+        padding: 5px 5px;
+        font-size: 0.8rem;
+    }
+    .slick-card .sl-body,.slick .slick-card {
+        height: 270px;
+    }
+    .room-other {
+        height: 400px;
+    }
+    .slick {
+        margin: 20px 50px;
+    }
+}

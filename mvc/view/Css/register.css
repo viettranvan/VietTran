@@ -1,0 +1,246 @@
+/*Login*/
+
+.wrap{
+    margin: 0rem 0;
+}
+
+input[type=text]:valid {
+    color: back;
+}
+ 
+/* Unmatched */
+input[type=text]:invalid {
+    color: red;
+}
+.wrapper{
+  width: 40%;
+  background: #fff;
+  margin: 3vw auto;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+  padding: 2.5vw;
+  border: 1px solid #af9a7d;
+}
+
+.wrapper .title{
+  font-size: 3vw;
+  font-weight: 700;
+  margin-bottom: 0px;
+  color: #202020;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form{
+  width: 100%;
+}
+
+.wrapper .form .inputfield{
+  margin: 2vw 0;
+  display: flex;
+  align-items: center;
+  color: #555;
+  font-size: 15px;
+}
+
+.wrapper .form .inputfield label{
+   width: 100%;
+   color: #A9A9A9;
+   margin-right: 10px;
+   font-size: 1vw;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 1vw;
+  padding: 0.5vw 1vw;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  height: 4vw;
+}
+.wrapper .form .inputfield .custom_select {
+  width: 100%;
+}
+
+.wrapper .form .inputfield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 0.5vw 1vw;
+  font-size: 1vw;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus{
+  border: 1px solid #202020;
+}
+
+.wrapper .form .inputfield p{
+   font-size: 1vw;
+   color: #757575;
+}
+.terms {
+  display: flex;
+  margin: 1.2vw auto 1vw auto;
+}
+.terms > p {
+  font-size: 1vw;
+  margin-left: 0.5vw;
+  margin-bottom: 0;
+}
+.haveAccount p {
+  font-size: 1vw;
+}
+.wrapper .form .terms .check{
+  width: 1vw;
+  height: 1vw;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.wrapper .form .terms .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.wrapper .form .terms .check .checkmark{
+  width: 1vw;
+  height: 1vw;
+  border: 1px solid #856d4b ;
+  display: block;
+  position: relative;
+}
+.wrapper .form  .terms .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  width: 10px;
+  height: 4px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.wrapper .form .terms .check input[type="checkbox"]:checked ~ .checkmark{
+  background: #856d4b;
+}
+
+.wrapper .form .terms .check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
+}
+
+.wrapper .form .submitField .btn{
+	display: block;
+	width: 100%;
+	height: 3vw;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-size: 200%;
+	background-image: linear-gradient(to right, #af9a7d ,  #856d4b, #c7a575);
+	font-size: 1.2vw;
+    color: white;
+    font-weight: 800;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+     
+}
+#registerBtn img {
+    display: none;
+    width: 20px;
+    height: 20px;
+}
+
+.wrapper .form .inputfield .btn:hover{
+	background-position: right;
+}
+
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width:420px) {
+  .wrapper .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper {
+    width: 50%;
+  }
+  .wrapper .title {
+    font-size: 2.5rem;
+  }
+  .wrapper .form .inputfield label{
+    margin-bottom: 7px;
+    margin-right: 0;
+  }
+  .wrapper .form .inputfield .input, .wrapper .form .inputfield .textarea,.wrapper .form .inputfield .custom_select select{
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .wrapper .form .inputfield.terms{
+    flex-direction: row;
+  }
+  .terms p {
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+  .check {
+    margin-top: 6px;
+  }
+  .wrapper .form .terms .check .checkmark {
+    width: 20px;
+    height: 20px;
+  }
+}
+/*Responsive*/
+@media only screen and (max-width: 1040px) {
+  .wrapper .form .inputfield label {
+    font-size: 1.6rem;
+  }
+  .wrapper .form .inputfield .input, .wrapper .form .inputfield .textarea {
+    font-size: 1.5rem;
+    padding: 0.2rem;
+  }
+  .wrapper .form .inputfield .custom_select select {
+    font-size: 1.5rem;
+    padding: 0.2rem;
+  }
+  .terms p {
+    font-size: 1rem;
+  }
+  .wrapper .form .terms .check .checkmark {
+    width: 10px;
+    height: 10px;
+    margin-right: 20px;
+  }
+  .wrapper .form .terms .check .checkmark:before{
+    top: 1px;
+    left: 1px;
+  }
+  .haveAccount p {
+    font-size: 1.2rem;
+  }
+  .wrapper .form .submitField .btn {
+    font-size: 1.2rem;
+    height: 2.4rem;
+  }
+}
